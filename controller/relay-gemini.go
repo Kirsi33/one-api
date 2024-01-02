@@ -66,19 +66,19 @@ func requestOpenAI2Gemini(textRequest GeneralOpenAIRequest) *GeminiChatRequest {
 		SafetySettings: []GeminiChatSafetySettings{
 			{
 				Category:  "HARM_CATEGORY_HARASSMENT",
-				Threshold: common.GeminiSafetySetting,
+				Threshold: "BLOCK_NONE",
 			},
 			{
 				Category:  "HARM_CATEGORY_HATE_SPEECH",
-				Threshold: common.GeminiSafetySetting,
+				Threshold: "BLOCK_NONE",
 			},
 			{
 				Category:  "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-				Threshold: common.GeminiSafetySetting,
+				Threshold: "BLOCK_NONE",
 			},
 			{
 				Category:  "HARM_CATEGORY_DANGEROUS_CONTENT",
-				Threshold: common.GeminiSafetySetting,
+				Threshold: "BLOCK_NONE",
 			},
 		},
 		GenerationConfig: GeminiChatGenerationConfig{
